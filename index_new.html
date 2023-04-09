@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="CSS/styles_new.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <script src="login.js"></script>
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <div class="outer-container">
+        <div class="inner-container">
+            <div class="img-box hide-img">
+                <img class="ux-pic" src="images/ux.png" alt="">
+            </div>
+            <div class="login-box">  
+                <h1 id="heading">Member Login</h1>
+                <form name="myform" method="post" action="new_index.html" onsubmit="return validateform()" >
+                    <div id="em">
+                        <!-- <i class="fa-solid fa-envelope icon"></i> -->
+                        <input class="mail" type="email" name="email" placeholder="email" ><br>
+                    </div>
+                    <div id="pd">
+                        <!-- <i class="fa-sharp fa-solid fa-lock icon"></i> -->
+                        <input class="password" type="password" name="password" placeholder="password" 
+                        title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number" 
+                        required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"><br>
+                    </div>
+                    <!-- <a class="btn" href="#">LOGIN</a> -->
+                    <div class="animated">
+                        <input class="btn animated-1" type="submit" value="Login">
+                        <!-- <a href="#" class="animated-1 btn btn-white btn-animation">Login</a> -->
+                        <p class="animated-2">Forgot <a href="#">Username / Password ?</a></p>
+                        <a class="animated-3" href="#" id="acc">Create your account > </a>
+                    </div>
+                </form>
+            </div>    
+        </div>
+    </div> 
+</body>
+</html>
